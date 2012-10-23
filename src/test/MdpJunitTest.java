@@ -1,9 +1,10 @@
 package test;
 
 import static org.junit.Assert.*;
-import main.MdpJunitSterren;
 
-import org.junit.*;
+import org.junit.Test;
+
+import main.MdpJunitDreyer;
 
 public class MdpJunitTest {
 	
@@ -11,12 +12,12 @@ public class MdpJunitTest {
 	
 	@Test
 	public void mdpClassTest(){
-		MdpJunitSterren test = new MdpJunitSterren();
+		MdpJunitDreyer test = new MdpJunitDreyer();
 	}
 	
 	@Test
 	public void methodenTest(){
-		MdpJunitSterren test = new MdpJunitSterren();
+		MdpJunitDreyer test = new MdpJunitDreyer();
 		
 		//s.capitalize testen
 		meinTest = "HELLO";
@@ -52,7 +53,7 @@ public class MdpJunitTest {
 	
 	@Test(expected=NullPointerException.class)
 	public void exceptionTest(){
-		MdpJunitSterren test = new MdpJunitSterren();
+		MdpJunitDreyer test = new MdpJunitDreyer();
 		meinTest = null;
 		meinTest = test.reverse(meinTest);}	
 
